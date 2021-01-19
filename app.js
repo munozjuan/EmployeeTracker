@@ -25,3 +25,21 @@ connection.connect(function(err) {
     if (err) throw err;
     runQuestions();
 });
+
+function runQuestions() {
+    inquirer
+      .prompt({
+          name: "action",
+          type: "rawlist",
+          message: "What would you like to do?",
+          choices: [
+              "View employees",
+              "View departments",
+              "View roles",
+              "Add employee",
+              "Add department",
+              "Add role",
+              "Update employee role",
+              "Exit"
+            ],
+      })
