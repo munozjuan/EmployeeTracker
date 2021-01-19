@@ -3,6 +3,7 @@ USE employee_managerDB;
 INSERT INTO department(name)
 VALUES ("Sales"),("IT"),("Finance"),("Legal"),("Communication");
 
+SELECT * FROM department;
 
 INSERT INTO role(title,salary,department_id)
 VALUES 
@@ -46,6 +47,7 @@ VALUES
 ("Holly", "Golightly",9);
 
 SELECT * FROM employee;
+
 UPDATE employee SET manager_id = 2 WHERE id = 1;
 UPDATE employee SET manager_id = 3 WHERE id = 2;
 UPDATE employee SET manager_id = 7 WHERE id = 4;
