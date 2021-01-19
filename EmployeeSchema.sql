@@ -17,3 +17,8 @@ CREATE TABLE role (
     PRIMARY KEY (id),
     FOREIGN KEY (department_id) REFERENCES department(id)
 );
+
+
+CREATE TABLE employee (
+   
+);
