@@ -43,3 +43,39 @@ function runQuestions() {
               "Exit"
             ],
       })
+      .then(function(answer) {
+        switch (answer.action) {
+            case "View employees":
+                viewEmployee();
+                break;
+
+            case "View departments":
+                viewDepartments();
+                break;
+
+            case "View roles":
+                viewRoles();
+                break;
+
+            case "Add employee":
+                addEmployee();
+                break;
+
+            case "Add department":
+                addDepartment();
+                break;
+
+            case "Add role":
+                addRole();
+                break;
+
+            case "Update employee role":
+                updateRole();
+                break;
+
+            case "Exit":
+                connection.end();
+                break;
+        }
+    });
+}
