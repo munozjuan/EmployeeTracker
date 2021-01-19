@@ -20,5 +20,16 @@ CREATE TABLE role (
 
 
 CREATE TABLE employee (
-   
+    id INT NOT NULL AUTO_INCREMENT,
+    first_name VARCHAR(30),
+    last_name VARCHAR(30),
+    role_id INT NOT NULL,
+    manager_id INT,
+    PRIMARY KEY (id),
+    FOREIGN KEY (manager_id) REFERENCES employee(id),
+    FOREIGN KEY (role_id) REFERENCES role(id)
 );
+
+SELECT * FROM department;
+SELECT * FROM role;
+SELECT * FROM employee;
