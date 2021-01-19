@@ -11,3 +11,17 @@ const connection = mysql.createConnection({
     password: process.env.DB_Pass,
     database: "employee_managerDB"
 });
+
+
+const connection = mysql.createConnection({
+    host: process.env.DB_Host,
+    port: 3306,
+    user: process.env.DB_User,
+    password: process.env.DB_Pass,
+    database: "employee_managerDB"
+});
+
+connection.connect(function(err) {
+    if (err) throw err;
+    runQuestions();
+});
