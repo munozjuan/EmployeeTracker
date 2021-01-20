@@ -20,7 +20,9 @@
     "url": "https://github.com/munozjuan/EmployeeTracker/issues"
   },
   "homepage": "https://github.com/munozjuan/EmployeeTracker#readme",
-  "dependencies": {},
+  "dependencies": {
+    "save": "^2.4.0"
+  },
   "devDependencies": {
     "console.table": "^0.10.0",
     "dotenv": "^8.2.0",
